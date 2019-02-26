@@ -23,7 +23,7 @@ def main():
             print(GREENC + "Successful" + ENDC)
             return
         print(REDC + "Failed\n" + ENDC)
-    print(REDC + "All Exploits Failed..." + ENDC)
+    print(REDC + "All Exploits Already Patched..." + ENDC)
 
 
 if __name__ == '__main__':

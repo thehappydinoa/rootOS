@@ -2,6 +2,8 @@
 
 Tries to use various CVEs to gain sudo or root access
 
+![screenshot](screenshot.png)
+
 ## Exploits
 
 -   2015-3760
