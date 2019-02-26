@@ -13,7 +13,7 @@ ENDC = "\033[00m"
 
 def main():
     version = platform.mac_ver()[0]
-    for exploit in [dyld_print_to_file, libmalloc, nopass]:
+    for exploit in [dyld_print_to_file, libmalloc, nopass, rootpipe]:
         if not exploit.vulnerable(version):
             print(YELLOWC + "Skipping %s...\n" % exploit.__name__ + ENDC)
             continue
