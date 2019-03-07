@@ -22,5 +22,10 @@ python root.py
 ## Dynamic Phishing
 
 ![phishing](docs/phishing.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fthehappydinoa%2FrootOS.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fthehappydinoa%2FrootOS?ref=badge_shield)
 
 ![phishing_id](docs/phishing_id.png)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fthehappydinoa%2FrootOS.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fthehappydinoa%2FrootOS?ref=badge_large)
