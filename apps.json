@@ -1,0 +1,27 @@
+{
+  "p1": {
+    "Firefox.app": ["/Contents/Resources/firefox.icns", "Firefox Update"],
+    "Google Chrome.app": ["/Contents/Resources/app.icns", "Google Chrome Updater"]
+  },
+  "p2": {
+    "Dropbox.app": ["/Contents/Resources/icon.icns", "DropboxMacUpdate"],
+    "CCleaner.app": ["/Contents/Resources/c.icns", "CCleaner Update"],
+    "Spotify.app": ["/Contents/Resources/Icon.icns", "Spotify Updater"],
+    "Alfred 3.app": ["/Contents/Resources/appicon.icns", "Alfred Update"],
+    "The Unarchiver.app": ["/Contents/Resources/unarchiver.icns", "The Unarchiver Update"],
+    "VLC.app": ["/Contents/Resources/VLC.icns", "VLC Update"]
+  },
+  "p3": {
+    "Atom.app": ["/Contents/Resources/atom.icns", "Atom Updater"],
+    "Atom Beta.app": ["/Contents/Resources/atom.icns", "Atom Updater"],
+    "Visual Studio.app": ["/Contents/Resources/VisualStudio.icns", "Visual Studio Update"],
+    "Android Studio.app": ["/Contents/Resources/studio.icns", "Android Studio Update"],
+    "Docker.app": ["/Contents/Resources/Appicon.icns", "Docker Update"],
+    "Xcode.app": ["/Contents/Resources/Xcode.icns", "Xcode Update"]
+  },
+  "p4": {
+    "Safari.app": ["/Contents/Resources/compass.icns", "Safari Update"],
+    "iTunes.app": ["/Contents/Resources/iTunes.icns", "iTunes Update"],
+    "System Preferences.app": ["/Contents/Resources/PrefApp.icns", "System Update"]
+  }
+}
