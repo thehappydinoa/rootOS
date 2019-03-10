@@ -2,7 +2,8 @@
 import platform
 from distutils.version import LooseVersion
 
-from exploits import ardagent, dyld_print_to_file, libmalloc, nopass, piggyback, phish
+from exploits import (ardagent, dyld_print_to_file, libmalloc, nopass, phish,
+                      piggyback)
 
 REDC = "\033[91m[-] "
 YELLOWC = "\033[93m[!] "
