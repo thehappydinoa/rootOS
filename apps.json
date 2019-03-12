@@ -1,10 +1,10 @@
 {
   "p1": {
-    "Firefox.app": ["/Contents/Resources/firefox.icns", "Firefox Update"],
-    "Google Chrome.app": ["/Contents/Resources/app.icns", "Google Chrome Updater"]
+    "Firefox.app": ["/Contents/Resources/firefox.icns", "Firefox Software Update", "Verified"],
+    "Google Chrome.app": ["/Contents/Resources/app.icns", "GoogleSoftwareUpdate", "Verified"]
   },
   "p2": {
-    "Dropbox.app": ["/Contents/Resources/icon.icns", "DropboxMacUpdate"],
+    "Dropbox.app": ["/Contents/Resources/icon.icns", "DropboxMacUpdate", "Verified"],
     "CCleaner.app": ["/Contents/Resources/c.icns", "CCleaner Update"],
     "Spotify.app": ["/Contents/Resources/Icon.icns", "Spotify Updater"],
     "Alfred 3.app": ["/Contents/Resources/appicon.icns", "Alfred Update"],
@@ -13,13 +13,22 @@
   },
   "p3": {
     "Atom.app": ["/Contents/Resources/atom.icns", "Atom Updater"],
-    "Atom Beta.app": ["/Contents/Resources/atom.icns", "Atom Updater"],
-    "Visual Studio.app": ["/Contents/Resources/VisualStudio.icns", "Visual Studio Update"],
+    "Atom Beta.app": ["/Contents/Resources/atom.icns", "Atom Beta Updater"],
+    "Visual Studio.app": ["/Contents/MacOS/Visual Studio Update.app/Contents/Resources/XamarinUpdate.icns", "Visual Studio Update", "Verified"],
     "Android Studio.app": ["/Contents/Resources/studio.icns", "Android Studio Update"],
     "Docker.app": ["/Contents/Resources/Appicon.icns", "Docker Update"],
-    "Xcode.app": ["/Contents/Resources/Xcode.icns", "Xcode Update"]
+    "GitHub Desktop.app": ["/Contents/Resources/electron.icns", "GitHub Desktop Update"]
   },
   "p4": {
+    "Product Hunt.app": ["/Contents/Resources/Appicon.icns", "Product Hunt Update"],
+    "Cyberduck.app": ["/Contents/Resources/cyberduck-application.icns", "Cyberduck Update"],
+    "Hex Fiend.app": ["/Contents/Resources/hex_icon.icns", "Hex Fiend Update"],
+    "Gas Mask.app": ["/Contents/Resources/applicationIcon.icns", "Gas Mask Update"],
+    "Tor Browser.app": ["/Contents/MacOS/updater.app/Contents/Resources/updater.icns", "Tor Software Update"],
+    "Paste.app": ["/Contents/Resources/AppIcon.icns", "Paste Update"]
+  },
+  "p5": {
+    "Xcode.app": ["/Contents/Resources/Xcode.icns", "Xcode Update"],
     "Safari.app": ["/Contents/Resources/compass.icns", "Safari Update"],
     "iTunes.app": ["/Contents/Resources/iTunes.icns", "iTunes Update"],
     "System Preferences.app": ["/Contents/Resources/PrefApp.icns", "System Update"]
