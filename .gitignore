@@ -4,4 +4,12 @@ __pycache__
 build/
 dist/
 .DS_Store
+__MACOSX
+
+# Compressed
 Prompt.app
+dump-keychain.sh
+keystealDaemon
+libkeystealClient.dylib
+security
+security-unsigned

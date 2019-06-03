@@ -10,6 +10,7 @@ Tries to use various CVEs to gain sudo or root access. All exploits have an end 
 -   CVE-2015-3760
 -   CVE-2015-5889
 -   CVE-2017-13872
+-   CVE-2019-8526
 -   AppleScript Dynamic Phishing
 -   [Sudo Piggyback](https://www.n00py.io/2016/10/privilege-escalation-on-os-x-without-exploits/)
 

