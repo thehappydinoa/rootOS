@@ -13,3 +13,6 @@ keystealDaemon
 libkeystealClient.dylib
 security
 security-unsigned
+
+# Local Exploits
+exploits_macos_local
