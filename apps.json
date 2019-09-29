@@ -7,7 +7,7 @@
     "Dropbox.app": ["/Contents/Resources/icon.icns", "DropboxMacUpdate", "Verified"],
     "CCleaner.app": ["/Contents/Resources/c.icns", "CCleaner Update"],
     "Spotify.app": ["/Contents/Resources/Icon.icns", "Spotify Updater"],
-    "Alfred 3.app": ["/Contents/Resources/appicon.icns", "Alfred Update"],
+    "Alfred 3.app": ["/Contents/Preferences/Alfred Preferences.app/Contents/Resources/appicon.icns", "Alfred Update"],
     "The Unarchiver.app": ["/Contents/Resources/unarchiver.icns", "The Unarchiver Update"],
     "VLC.app": ["/Contents/Resources/VLC.icns", "VLC Update"]
   },
