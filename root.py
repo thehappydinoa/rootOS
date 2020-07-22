@@ -2,8 +2,17 @@
 import platform
 from distutils.version import LooseVersion
 
-from exploits import (ardagent, dyld_print_to_file, keysteal, libmalloc,
-                      nopass, phish, piggyback, proxifier, sera)
+from exploits import (
+    ardagent,
+    dyld_print_to_file,
+    keysteal,
+    libmalloc,
+    nopass,
+    phish,
+    piggyback,
+    proxifier,
+    sera,
+)
 
 OS_EXPLOITS = [ardagent, dyld_print_to_file, libmalloc, nopass]
 APP_EXPLOITS = [proxifier, sera]
@@ -41,7 +50,7 @@ def main():
     return
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
