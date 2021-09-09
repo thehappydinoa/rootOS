@@ -24,11 +24,15 @@ python root.py
 | AppleScript Dynamic Phishing |                |            | <https://github.com/thehappydinoa/rootOS/blob/master/apps.json>                                        |
 | Sudo Piggyback               |                |            | <https://www.n00py.io/2016/10/privilege-escalation-on-os-x-without-exploits/>                          |
 
-## Dynamic Phishing
+### Dynamic Phishing
 
 ![phishing](docs/phishing.png)
 
 Please note the dynamic icon and prompt
+
+## Additional Exploits
+
+- [amanszpapaya/MacPer](https://github.com/amanszpapaya/MacPer)
 
 ## License
 
